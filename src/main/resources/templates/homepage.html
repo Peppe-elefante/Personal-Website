@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- pallette: https://colorhunt.co/palette/251d3a2a2550e04d01ff7700
+                https://colorhunt.co/palette/1801614f1787eb3678fb773c-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    </head>
+<body>
+    <div th:replace="fragments/navbar :: navbar"></div>
+    <br>
+    <h1>Giuseppe Elefante</h1>
+
+    <div th:if="${session.Language == 'English'}">
+        <p>I am currently a student of the bachelor's degree of Computer Science at Università degli studi di Salerno,
+            a department which has been declared a department of eccelence by the Italian education ministry, during my studies
+            I participated in an erasmus semster at the Universidade de Coimbra in the department of computer engineering.
+            My work primarily comprises of web application built with java and mobile applications for android.</p>
+
+        <h3>Technologies</h3>
+    </div>
+
+    <div th:replace="italiano/homepageITA :: homepageITA"></div>
+
+    <div class="technologies">
+        <ul>
+            <li>Programming languages: Java, Kotlin, Python, C</li>
+            <li>Web development: HTML, CSS, JavaScript, Bootstrap, Thymeleaf, JSP, JSTL</li>
+            <li>Frameworks: Spring, Android SDK</li>
+            <li>IDE: IntellijIdea, Android Studio, Eclipse</li>
+        </ul>
+    </div>
+
+    <div class="languages">
+        <h3 th:if="${session.Language == 'English'}">Languages</h3>
+        <h3 th:if="${session.Language == 'Italian'}">Lingue</h3>
+        <ul>
+            <li>Italian: Native</li>
+            <li>English: C2 (Certified by Cambridge Language Assesment)</li>
+            <li>Portuguese: B1 (Certified by Universidade de Coimbra)</li>
+        </ul>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
