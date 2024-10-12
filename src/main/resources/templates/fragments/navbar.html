@@ -7,8 +7,8 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <form th:action="@{/ChangeLang}" method = "GET" class="d-inline">
-                        <input type="image" th:src="@{/images/English_language.png}" alt="English" width="32" height="32" th:if="${session.Language == 'Italian'}">
-                        <input type="image" th:src="@{/images/Italian_language.png}" alt="Italiano" width="32" height="32" th:if="${session.Language == 'English'}">
+                        <input type="image" th:src="@{/images/English_language.png}" alt="English" width="32" height="32" th:if="${session.Language == 'Italian'}" class = "mt-2">
+                        <input type="image" th:src="@{/images/Italian_language.png}" alt="Italiano" width="32" height="32" th:if="${session.Language == 'English'}" class = "mt-2">
                     </form>
                 </li>
                 <li class="nav-item">
@@ -19,17 +19,18 @@
                     <a class="nav-link" th:href="@{/projects}" th:if="${session.Language == 'Italian'}">Progetti</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" th:href="@{/giuseppe}">Giuseppe</a>
+                    <a class="nav-link" th:if="${session.Language == 'English'}" th:href="@{/giuseppe}">About me</a>
+                    <a class="nav-link" th:if="${session.Language == 'Italian'}" th:href="@{/giuseppe}">Chi sono</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="linksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #FB773C; color: #000000">
                         Account Links
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="linksDropdown">
-                        <li><a class="dropdown-item" href="https://www.linkedin.com/in/giuseppe-elefante-3636352a2/" style="background-color: #FF7700;">Linkedin</a></li>
-                        <li><a class="dropdown-item" href="https://github.com/Peppe-elefante" style="background-color: #FF7700;">Github</a></li>
-                        <li><a class="dropdown-item" href="https://www.instagram.com/peppe_elefante/" style="background-color: #FF7700;">Instagram</a></li>
-                        <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100081657677693" style="background-color: #FF7700;">Facebook</a></li>
+                        <li><a class="dropdown-item" href="https://www.linkedin.com/in/giuseppe-elefante-3636352a2/" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-linkedin">Linkedin</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/Peppe-elefante" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-github"></i>Github</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/peppe_elefante/" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100081657677693" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
                     </ul>
                 </li>
             </ul>

@@ -78,3 +78,22 @@ h3{
 .nav-item:hover {
     color: #4F1787
 }
+
+.dropdown-menu {
+    background-color: #CC5F00; /* Custom background color */
+    border: none; /* Remove border */
+}
+
+.dropdown-item {
+    color: #000000; /* Custom text color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.dropdown-item:hover {
+    background-color: #FB773C; /* Hover background color */
+    color: #FFFFFF; /* Hover text color */
+}
+
+.dropdown-item i {
+    margin-right: 8px; /* Space between icon and text */
+}

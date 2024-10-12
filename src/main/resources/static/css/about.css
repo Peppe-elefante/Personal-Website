@@ -54,11 +54,13 @@ li {
 
 .Volunteering-experience {
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .Volunteering-experience h4{
     color: #EB3678;
     margin-top: 0;
+    font-size: 1.2em;
 }
 
 .project-header {
@@ -69,12 +71,12 @@ li {
 
 .project-header h3 {
     color: #B22A50;
-    margin: 0;
+    margin: 0 auto 0 0;
 }
 
 .project-header a {
     color: #e04d01;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .project-header a:hover {
