@@ -1,4 +1,59 @@
 <div th:fragment = "giuseppeITA" th:if="${session.Language == 'Italian'}">
     <h1>Chi sono</h1>
     <p>Informazioni su me stesso che non sono progetti o istruzione</p>
+
+    <div class="Interests">
+        <h2>Interessi</h2>
+        <ul>
+            <li>Allenamento BJJ(Brazilian Jiu Jitsu)</li>
+            <li>Volontariato</li>
+            <li>Viaggiare</li>
+            <li>Escursionismo</li>
+        </ul>
+    </div>
+
+    <div class="Volunteering">
+        <h1>Esperienze di Volontariato</h1>
+
+        <div class="Volunteering-experience">
+            <h2>Progetti del Corpo Europeo di Solidarietà</h2>
+            <div class="project-header">
+                <h3>Rifugi di solidarietà, 2022</h3>
+                <a th:href="@{/pdf/youthpassHun.pdf}" target="_blank">Youthpass</a>
+            </div>
+            <h4>Budapest, Ungheria</h4>
+            <ul>
+                <li>Rifugi di Solidarietà è stato un campo di volontariato in cui volontari internazionali hanno collaborato per creare programmi significativi in un campo estivo per bambini costretti a fuggire dall'Ucraina.</li>
+                <li>Ho organizzato e animato giochi e attività sportive per i bambini</li>
+                <li>Ho lavorato in un team multiculturale per coordinare e organizzare attività coinvolgenti per i bambini</li>
+            </ul>
+        </div>
+
+        <div class="Volunteering-experience">
+            <div class="project-header">
+                <h3>Flora della Finlandia, 2023</h3>
+                <a th:href="@{/pdf/youthpassFin.pdf}" target="_blank">Youthpass</a>
+            </div>
+            <h4>Punkaharju, Finlandia</h4>
+            <ul>
+                <li>Flora della Finlandia è stato un progetto di volontariato in cui i volontari si sono occupati della manutenzione del Parco Nazionale di Punkaharju.</li>
+                <li>Ho svolto compiti all'aperto legati alla natura, come pulire l'ambiente, rimuovere piante invasive e assistere in attività sportive della comunità locale.</li>
+                <li>Ho collaborato con un team internazionale per completare i compiti assegnati</li>
+            </ul>
+        </div>
+
+        <div class="Volunteering-experience">
+            <div class="project-header">
+                <h3>Per la Natura e le Comunità, 2024</h3>
+            </div>
+            <h4>Aukštaitija, Lituania</h4>
+            <ul>
+                <li>Per la Natura e le Comunità è stato un campo di volontariato in cui un team di volontari ha aiutato a rinnovare l'infrastruttura del Parco Nazionale di Aukštaitija.</li>
+                <li>Ho partecipato ad attività di team building con un team internazionale</li>
+                <li>Ho rimosso e ricostruito una vecchia scala di legno sulla collina culturalmente significativa di Ladakalnis</li>
+            </ul>
+        </div>
+
+    </div>
+
 </div>
