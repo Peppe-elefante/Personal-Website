@@ -22,16 +22,16 @@
                     <a class="nav-link" th:if="${session.Language == 'English'}" th:href="@{/giuseppe}">About me</a>
                     <a class="nav-link" th:if="${session.Language == 'Italian'}" th:href="@{/giuseppe}">Chi sono</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="linksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #FB773C; color: #000000">
-                        Account Links
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="linksDropdown">
-                        <li><a class="dropdown-item" href="https://www.linkedin.com/in/giuseppe-elefante-3636352a2/" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-linkedin">Linkedin</a></li>
-                        <li><a class="dropdown-item" href="https://github.com/Peppe-elefante" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-github"></i>Github</a></li>
-                        <li><a class="dropdown-item" href="https://www.instagram.com/peppe_elefante/" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-                        <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100081657677693" style="background-color: #FF7700;" target = "_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
-                    </ul>
+                <li>
+                    <div class="paste-button">
+                        <button class="button">Links &nbsp; ▼</button>
+                        <div class="dropdown-content">
+                            <a id="top" href="https://www.linkedin.com/in/giuseppe-elefante-3636352a2/" target = "_blank">Linkedin</a>
+                            <a id="middle" href="https://github.com/Peppe-elefante" target = "_blank">Github</a>
+                            <a id="bottom" href="https://www.instagram.com/peppe_elefante/" target = "_blank">Instagram</a>
+                            <a id ="bottom2" href="https://www.facebook.com/profile.php?id=100081657677693" target = "_blank">Facebook</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
