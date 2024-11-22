@@ -15,11 +15,15 @@
     <br>
     <h1>Giuseppe Elefante</h1>
 
+    <div class="profile-container">
+        <img th:src="@{/images/me.jpg}" alt="Profile Picture" class="profile-img">
+    </div>
+
     <div th:if="${session.Language == 'English'}">
         <p>I am currently pursuing a Bachelor's degree in Computer Science at the Università degli Studi di Salerno,
             a department recognized as a Department of Excellence by the Italian Ministry of Education.
             As part of my academic journey, I participated in an Erasmus semester at the Universidade de Coimbra, where I studied in the Department of Computer Engineering.
-            My experience includes developing web applications using Java and creating mobile applications for Android.</p>
+            My experience includes developing web applications using Java as back-end and soon will include mobile applications for Android.</p>
 
         <div class="technologies">
             <h3 >Technologies</h3>

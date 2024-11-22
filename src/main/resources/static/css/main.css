@@ -160,3 +160,26 @@ h3{
 .paste-button:hover .dropdown-content {
     display: block;
 }
+
+.profile-container {
+    display: flex;             /* Flexbox to center image */
+    justify-content: center;   /* Horizontally center the image */
+    align-items: center;       /* Vertically center the image */
+    background-color: #fff;    /* White background */
+    border-radius: 50%;        /* Make the container round */
+    padding: 10px;             /* Padding around the image */
+}
+
+.profile-container .profile-img {
+    width: 150px; /* Initial size */
+    height: 150px; /* Make image square */
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom on hover */
+    border: 5px solid #fff; /* White border around the image */
+}
+
+/* Hover effect on the image */
+.profile-container .profile-img:hover {
+    transform: scale(1.1); /* Zoom in slightly */
+}
